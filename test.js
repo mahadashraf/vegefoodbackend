@@ -13,6 +13,17 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
+
+
+// For specific frontend URL (recommended for production)
+app.use(cors({
+  origin: 'https://your-frontend-url.vercel.app', // Replace with your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
+
+
+
 // Session setup
 app.use(session({
   secret: 'your_secret_key', // Replace with your own secret key
