@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 // For specific frontend URL (recommended for production)
 app.use(cors({
-  origin: 'https://your-frontend-url.vercel.app', // Replace with your frontend URL
+  origin: 'https://vegefoodfrontend-umzn.vercel.app/', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
