@@ -79,6 +79,13 @@ const UserSchema = new mongoose.Schema({
 const UserModel = mongoose.model('User', UserSchema);
 
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+
+
+
 //user register
 
 app.post('/register', async (req, res) => {
